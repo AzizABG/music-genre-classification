@@ -1,7 +1,9 @@
 import json
 import numpy as np
 from sklearn.model_selection import train_test_split
-import tensorflow.keras as keras
+# import tensorflow.keras as keras
+import tensorflow as tf 
+
 
 # path to json file that stores MFCCs and genre labels for each processed segment
 DATA_PATH = "data.json"
@@ -35,26 +37,26 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
     # build network topology
-    model = keras.Sequential([
+    model = tf.keras.Sequential([
 
         # input layer
-        keras.layers.Flatten(input_shape=(X.shape[1], X.shape[2])),
+        tf.keras.layers.Flatten(input_shape=(X.shape[1], X.shape[2])),
 
         # 1st dense layer
-        keras.layers.Dense(512, activation='relu'),
+        tf.keras.layers.Dense(512, activation='relu'),
 
         # 2nd dense layer
-        keras.layers.Dense(256, activation='relu'),
+        tf.keras.layers.Dense(256, activation='relu'),
 
         # 3rd dense layer
-        keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(64, activation='relu'),
 
         # output layer
-        keras.layers.Dense(10, activation='softmax')
+        tf.keras.layers.Dense(10, activation='softmax')
     ])
 
     # compile model
-    optimiser = keras.optimizers.Adam(learning_rate=0.0001)
+    optimiser = tf.keras.optimizers.Adam(learning_rate=0.0001)
     model.compile(optimizer=optimiser,
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
