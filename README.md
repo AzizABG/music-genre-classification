@@ -29,7 +29,7 @@ We compute the distance between MFCCs (Mel-frequency cepstral coefficients) of e
 
 When a distance matrix is computed, we then apply k-nn algorithm to predict the genres
 
-###Neural Nets
+### Neural Nets
 We train Deep Neural Networks, Convolutional Neural Networks (CNN), and Recurrent Neural Networks with by using MFCCs and all the other features extracted from the audio files.
 
 ---
