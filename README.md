@@ -38,7 +38,7 @@ This data set has different songs in 10 different genres. They are
 - **Description**: These notebooks implement Convolutional Neural Networks (CNN) for audio classification. The former analyzes 3-second audio clips, while the latter deals with 30-second clips.
 
 ### 4. `KNN_all_features_Lp_metric_3_sec.ipynb` and `KNN_all_features_Lp_metric_30_sec.ipynb`
-- **Description**: K-Nearest Neighbors (KNN) models are implemented in these notebooks using l1 or Euclidean distance. They differ in the length of audio clips analyzed.
+- **Description**: K-Nearest Neighbors (KNN) models are implemented in these notebooks using L1 or Euclidean distance. They differ in the length of audio clips analyzed.
 
 ### 5. `KNN_GW_Metric_MFCCs.ipynb` and `KNN_Mahalanobis_Metric_MFCCs.ipynb`
 - **Description**: These notebooks explore KNN models with different metrics (Gromov-Wasserstein and Mahalanobis) focusing on Mel-frequency cepstral coefficients (MFCCs) as features.
