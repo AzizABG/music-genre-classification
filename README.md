@@ -1,6 +1,7 @@
 # Music Genre Classification
 
 Team Members: Aziz Burak Gülen, Sacha L’Heveder, Afsin Ozdemir, Ming Zhang
+
 Fall 2023 Erdös Institute Data Science Bootcamp
 
 ## Overview
