@@ -2,7 +2,18 @@
 
 # 
 
-
+## GTZAN data set. 
+This data set has different songs in 10 different genres. They are 
+- blues 
+- classical 
+- country 
+- disco
+- hiphop 
+- jazz
+- metal 
+- pop
+- reggae 
+- rock 
 
 ## Methods 
 - 
