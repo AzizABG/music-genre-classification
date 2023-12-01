@@ -6,7 +6,7 @@ import tensorflow as tf
 
 
 # path to json file that stores MFCCs and genre labels for each processed segment
-DATA_PATH = "data.json"
+DATA_PATH = "datasets/processed_data/data.json"
 
 def load_data(data_path):
     """Loads training dataset from json file.
