@@ -7,8 +7,6 @@ Fall 2023 Erdös Institute Data Science Bootcamp
 ## Overview
 Our project started with the initial idea to use a variation of the Gromov-Wasserstein (GW) distance that is designed for time series (introduced in the paper: [Scalable Gromov–Wasserstein Based Comparison of Biological Time Series](https://link.springer.com/article/10.1007/s11538-023-01175-y)) in order to classify different music genres. Our goal was to leverage this distance notion to develop an interpretable model for music genre classification.
 
-![GW-distance](https://www.researchgate.net/publication/344000658/figure/fig2/AS:930791710269443@1598929445975/Gromov-Wasserstein-coupling-of-two-mm-spaces-X-X-d-X-X-and-Y-Y-d-Y-n-Y.png)
-
 We implemented the algorithm from the paper in order to compute this GW distance. We used the distance matrix with k-nn algorithm to train our model. Moreover, we used other notions of distances such as Mahalanobis distance and L1 distance. We also trained a k-nn with the distance matrices we obtained from Mahalanobis distance and L1 distance. To have a baseline model, we trained two neural networks: CNN and RNN.
 
 ## GTZAN data set. 
