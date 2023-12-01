@@ -10,7 +10,7 @@ yay -S python-lazy-loader
 '''
 import matplotlib.pyplot as plt
 
-file = "Data/genres_original/blues/blues.00000.wav"
+file = "../datasets/raw_data/GTZAN_Dataset/genres_original/blues/blues.00000.wav"
 
 #waveform
 
