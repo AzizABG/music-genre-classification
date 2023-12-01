@@ -1,4 +1,7 @@
-# music-genre-classification
+# Music Genre Classification
+
+Team Members: Aziz Burak Gülen, Sacha L’Heveder, Afsin Ozdemir, Ming Zhang
+Fall 2023 Erdös Institute Data Science Bootcamp
 
 ## Overview
 Our project started with the initial idea to use a variation of the Gromov-Wasserstein (GW) distance that is designed for time series (introduced in the paper: [Scalable Gromov–Wasserstein Based Comparison of Biological Time Series](https://link.springer.com/article/10.1007/s11538-023-01175-y)) in order to classify different music genres. Our goal was to leverage this distance notion to develop an interpretable model for music genre classification.
@@ -19,10 +22,14 @@ This data set has different songs in 10 different genres. They are
 - rock 
 
 ## Methods 
-- 
+### K-NN with Distances
+We use the k-nn algorithm in order to classify different music genres. To do so, we compute several different distances (Gromov-Wasserstein distance, Mahalanobis distance, and L1 distance) between each audio file.
 
+We compute the distance between MFCCs (Mel-frequency cepstral coefficients) of each audio file. The mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound. MFCCs are coefficients that collectively make up an MFC.
 
+When a distance matrix is computed, we then apply k-nn algorithm to predict the genres
 
+###CNN and RNN
 ---
 
 
