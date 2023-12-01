@@ -53,6 +53,9 @@ We train Deep Neural Networks, Convolutional Neural Networks (CNN), and Recurren
 ### 5. `KNN_GW_Metric_MFCCs.ipynb` and `KNN_Mahalanobis_Metric_MFCCs.ipynb`
 - **Description**: These notebooks explore KNN models with different metrics (Gromov-Wasserstein and Mahalanobis) focusing on Mel-frequency cepstral coefficients (MFCCs) as features.
 
+### 6. `nn_model.ipynb` and `rnn.ipynb`
+- **Description**: These notebooks implement a deep neural network and a recurrent neural network for audio classification by using MFCCs as features.
+
 ## Installation
 
 - Python 3.x
